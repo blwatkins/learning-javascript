@@ -8,6 +8,6 @@
 
 ## Codecademy Tutorials
 
-### <a href="https://www.codecademy.com/learn/introduction-to-javascript" target="_blank" rel="noopener noreferrer">Codecademy: Learn JavaScript</a>
+### <a href="https://www.codecademy.com/learn/learn-javascript-functions-and-scope" target="_blank" rel="noopener noreferrer">Codecademy - Learn JavaScript: Functions and Scope</a>
 
 * This tutorial is a free course
