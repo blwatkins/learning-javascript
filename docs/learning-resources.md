@@ -1,11 +1,11 @@
 # Learning Resources
 
-## [Mozilla Developer Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+## <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer">Mozilla Developer Web Docs</a>
 
-## [W3Schools JavaScript Tutorial](https://www.w3schools.com/js/)
+## <a href="https://www.w3schools.com/js/" target="_blank" rel="noopener noreferrer">W3Schools JavaScript Tutorial</a>
 
 ### Codecademy Tutorials
 
-#### [Codecademy: Learn JavaScript](https://www.codecademy.com/learn/introduction-to-javascript)
+#### <a href="https://www.codecademy.com/learn/introduction-to-javascript" target="_blank" rel="noopener noreferrer">Codecademy: Learn JavaScript</a>
 
 * This tutorial is a free course
