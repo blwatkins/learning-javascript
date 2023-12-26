@@ -3,6 +3,8 @@
 /* NOTES:
 ** - Objects are mutable
 ** - You can mutate (reassign and add key-value pairs) objects declared with const
+** - Objects are passed by "reference" (functions with object parameters can permanently mutate the object).
+** - Reassigning an object in a function will not affect the object passed to the function (similar behavior to Java).
 */
 
 // object literal
@@ -32,7 +34,36 @@ let myObject = {
 
     // nested object
     innerObject: {
-        key: 'value'
+        key: 'value',
+
+        // array of objects
+        'array of objects': [
+            {
+                key: 'object 0 value',
+
+                printValue() {
+                    console.log('print value from object 0');
+                }
+            }, 
+            {
+                key: 'object 1 value'
+            }
+        ]
+    },
+
+    secondObject: {
+        cat: {
+            sound: 'meow'
+        },
+        dog: {
+            sound: 'bark'
+        },
+        cow: {
+            sound: 'moo'
+        },
+        sheep: {
+            sound: 'baaa'
+        }
     }
 };
 
@@ -68,3 +99,38 @@ console.log(`after add = ${myObject.boolValue}`);
 myObject.firstFunction();
 myObject.secondFunction();
 myObject.thirdFunction();
+
+// chaining operators
+myObject.innerObject['array of objects'][0].printValue();
+
+// altering an object
+const someObject = {
+    mood: 'happy',
+    age: 17,
+    occupation: 'dancing queen'
+};
+
+console.log(someObject);
+console.log(`mood = ${someObject.mood}`);
+console.log(`age = ${someObject.age}`);
+console.log(`favoriteSong = ${someObject.favoriteSong}`);
+
+const changeMood = object => {
+    console.log('Changing mood...');
+    object.mood = 'tired';
+    object.age = 23;
+    object.favoriteSong = 'I Miss You';
+}
+
+changeMood(someObject);
+
+console.log(someObject);
+console.log(`mood = ${someObject.mood}`);
+console.log(`age = ${someObject.age}`);
+console.log(`favoriteSong = ${someObject.favoriteSong}`);
+
+// for in syntax for iterating over object keys
+for (let animal in myObject.secondObject) {
+    console.log(`key = ${animal}`);
+    console.log(`The ${animal} says ${myObject.secondObject[animal].sound}`);
+}
