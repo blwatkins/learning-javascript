@@ -1,5 +1,7 @@
 // Function Notes
 
+console.log('FUNCTION NOTES -------------------------------');
+
 // hoising example
 // NOTE: this is bad practice
 sayThankYou('Julie');

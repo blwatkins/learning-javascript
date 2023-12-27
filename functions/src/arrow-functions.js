@@ -6,6 +6,8 @@
 ** - Remove the need to type out the `function` keyword when you write a function expression
 */
 
+console.log('ARROW FUNCTION NOTES -------------------------');
+
 // regular arrow function syntax
 const askAge = (name) => {
     console.log(`Hello, ${name}! How old are you?`);

@@ -4,6 +4,8 @@
 ** - function expressions are not hoisted
 */
 
+console.log('FUNCTION EXPRESSION NOTES --------------------');
+
 const getArea = function(width, height) {
     return width * height;
 }
