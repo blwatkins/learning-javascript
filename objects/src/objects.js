@@ -7,6 +7,8 @@
 ** - Reassigning an object in a function will not affect the object passed to the function (similar behavior to Java).
 */
 
+console.log('OBJECTS NOTES --------------------------------');
+
 // object literal
 let emptyObject = {};
 
